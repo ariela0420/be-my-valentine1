@@ -119,7 +119,8 @@ button {
     height: 20px;
     background: red;
     transform: rotate(-45deg);
-    animation: fallBounce 4s linear forwards;
+    animation: fallBounce 2s linear forwards;
+    z-index: 6;
 }
 
 .rain-heart::before,
@@ -165,16 +166,28 @@ button {
 .sparkle {
     position: absolute;
     top: -20px;
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     background: rgb(202, 172, 0);
     border-radius: 50%;
     animation: sparkleFall 2s linear forwards;
+    z-index: 6;
+    box-shadow: 0 0 8px gold, 0 0 12px gold;
 }
 
 @keyframes sparkleFall {
-    to {
-        transform: translateY(100vh) scale(0);
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(80vh) scale(1.2);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(85vh) scale(0);
         opacity: 0;
     }
 }
