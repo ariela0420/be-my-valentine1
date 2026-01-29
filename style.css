@@ -195,3 +195,27 @@ button {
         opacity: 0;
     }
 }
+
+.popup-message {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #ff8692;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 5;
+    opacity: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    /* so it doesn't block clicks */
+}
+
+.popup-message.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
