@@ -167,9 +167,9 @@ button {
     top: -20px;
     width: 6px;
     height: 6px;
-    background: gold;
+    background: rgb(202, 172, 0);
     border-radius: 50%;
-    animation: sparkleFall 3s linear forwards;
+    animation: sparkleFall 2s linear forwards;
 }
 
 @keyframes sparkleFall {
@@ -203,7 +203,7 @@ button {
     transform: translate(-50%, -50%) scale(0);
     background: #ff8692;
     color: white;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: bold;
     padding: 20px 40px;
     border-radius: 20px;
